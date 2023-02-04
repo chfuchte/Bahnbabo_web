@@ -10,30 +10,34 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-}
-
-header h1 {
-    color: var(--vgf);
-    margin-left: 42px;
-}
-
-header img {
-    max-height: 54px;
-    min-height: 54px;
-    width: auto;
-}
-
-header div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    margin-left: 4px;
-    margin-right: 4px;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 main {
     margin-top: var(--header-height);
 }
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 10px 22px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #029ba5;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  
+  .topnav a.active {
+    background-color: #029ba5;
+    color: white;
+    border-radius: 10px;
+  }
