@@ -15,6 +15,7 @@ header {
 
 header h1 {
     color: var(--vgf);
+    margin-left: 42px;
 }
 
 header img {
