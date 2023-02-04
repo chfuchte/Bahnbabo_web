@@ -5,7 +5,7 @@ function sendContactMessage() {
     if (cc && content) {
         document.querySelector('#error_contact').style.display = 'none';
         document.querySelector('#error_contact').innerText = '';
-        window.location.href = `mailto:${email}?cc=${cc}&amp?body=${content}&amp?subject=Kontaktaufnahme via ${window.location.hostname}`
+        window.location.href = `mailto:${email}?cc=${cc}&body=${content}&subject=Kontaktaufnahme via ${window.location.hostname}`
     } else {
         document.querySelector('#error_contact').style.display = 'block';
         document.querySelector('#error_contact').innerText = 'Ungültige Eingaben!';
