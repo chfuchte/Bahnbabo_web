@@ -45,8 +45,8 @@ input {
     font-size: 18px;
     padding: 2px;
     box-sizing: border-box;
-    min-width: 160px;
-    max-width: 160px;
+    min-width: 240px;
+    max-width: 240px;
 }
 
 input:hover {
@@ -56,6 +56,25 @@ input:hover {
 input:focus {
     outline: none;
     border: 3px solid var(--hover);
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+textarea {
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid var(--shadow);
+    font-size: 18px;
+    padding: 2px;
+    box-sizing: border-box;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+textarea:hover {
+    border: 1px solid var(--hover);
 }
 
 input[type="checkbox"] {

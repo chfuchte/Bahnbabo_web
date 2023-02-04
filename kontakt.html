@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/side.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <!-- Components -->
 
     <!-- JavaScript Files -->
@@ -24,12 +25,11 @@
 
 <body>
     <header>
-        <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#news">Über mich</a>
-            <a href="#contact">Meine Vision für Frankfurt</a>
-            <a href="#about">Kontakt</a>
-          </div>
+        <h1>
+            Bleib stabil!
+        </h1>
+        <nav>
+        </nav>
     </header>
 
     <section class="side_sect">
@@ -38,7 +38,13 @@
     </section>
 
     <main>
-
+        <section class="contact_form">
+            <h1>Kontakt</h1>
+            <p style="display: none; color: red;" id="error_contact"></p>
+            <input type="email" id="email_input_contact" placeholder="Deine E-Mail">
+            <textarea id="content_input_contact" placeholder="Deine Nachricht"></textarea>
+            <button onclick="sendContactMessage()">Absenden</button>
+        </section>
     </main>
 
     <footer>
