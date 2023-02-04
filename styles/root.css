@@ -98,3 +98,10 @@ button {
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 400px) {
+    textarea {
+        max-width: calc(100vw - 40px);
+        min-width: calc(100vw - 40px);
+    }
+}
