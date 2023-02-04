@@ -1,1 +1,32 @@
 @import url(root.css);
+
+main {
+    min-height: calc(100vh);
+}
+
+footer {
+    width: calc(100% - 40px);
+    background-color: #5c5c5c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+footer > div a {
+    color: #fff;
+}
+
+footer .web_links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer .about_links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
