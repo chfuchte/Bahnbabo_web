@@ -1,14 +1,18 @@
 :root {
     --bg: #b6b4b4;
-    --color: #000;
-    --accent: #00006f;
+    --color: #000000;
+    --vgf: #029ba5;
     --shadow: #1e1e1e6e;
-    --hover: #390009;
+    --hover: #00999c;
+    --header: #ffffff;
+
+    --header-height: 60px;
 }
 
 * {
     margin: 0;
     padding: 0;
+    accent-color: var(--vfg);
 }
 
 body {
@@ -16,5 +20,62 @@ body {
     height: 100%;
     background-color: var(--bg);
     color: var(--color);
-    accent-color: var(--accent);
+    accent-color: var(--vfg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--color);
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+input {
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid var(--shadow);
+    font-size: 18px;
+    padding: 2px;
+    box-sizing: border-box;
+    min-width: 160px;
+    max-width: 160px;
+}
+
+input:hover {
+    border: 1px solid var(--hover);
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid var(--hover);
+}
+
+input[type="checkbox"] {
+    min-width: 24px;
+    height: 24px;
+    accent-color: var(--vgf);
+}
+
+button {
+    height: 24px;
+    border-radius: 5px;
+    border: 2px solid var(--shadow);
+    font-size: 18px;
+    background-color: var(--hover);
+    color: #fff;
+    padding: 2px;
+    box-sizing: border-box;
+    min-width: 100px;
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
