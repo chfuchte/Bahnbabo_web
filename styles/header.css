@@ -17,6 +17,22 @@ header h1 {
     color: var(--vgf);
 }
 
+header img {
+    max-height: 54px;
+    min-height: 54px;
+    width: auto;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 main {
     margin-top: var(--header-height);
 }
