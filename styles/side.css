@@ -21,7 +21,7 @@ footer {
     margin-left: 40px;
 }
 
-@media screen and (max-height: 900px) {
+@media screen and ((max-height: 900px) or (max-width: 1000px)) {
     main {
         margin-left: 0;
     }
