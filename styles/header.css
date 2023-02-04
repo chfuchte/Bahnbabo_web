@@ -10,7 +10,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   overflow: hidden;
   gap: 20px;
 }
@@ -19,24 +19,97 @@ main {
   margin-top: var(--header-height);
 }
 
-header a {
+header nav a {
   color: #000000;
   text-align: center;
   padding: 10px 22px;
   text-decoration: none;
   font-size: 17px;
-  margin-left: 8px;
-  margin-right: 8px;
 }
 
-header a:hover {
+header nav a:hover {
   background-color: #029ba5;
   color: rgb(255, 255, 255);
   border-radius: 10px;
 }
 
-header a.active {
+header nav a.active {
   background-color: #029ba5;
   color: white;
   border-radius: 10px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  gap: 20px;
+  align-items: center;
+  margin-right: 12px;
+}
+
+header nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header input[type="checkbox"] {
+  display: none;
+}
+
+header label {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-left: 12px;
+}
+
+header h1 {
+  color: var(--vgf);
+  margin-left: 80px;
+}
+
+header label span {
+  background-color: var(--vgf);
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 4px;
+  max-height: 4px;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  header nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: var(--header-height);
+    background-color: var(--vgf);
+  }
+
+  header nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    max-height: 40px;
+    min-width: calc(100vw);
+    max-width: calc(100vw);
+  }
+
+  header h1 {
+    margin-left: 0;
+  }
+
+  header label {
+    display: flex;
+  }
 }

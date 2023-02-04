@@ -1,7 +1,7 @@
 @import url(root.css);
 
 main {
-    min-height: calc(100vh);
+    min-height: calc(100vh - var(--header-height));
 }
 
 footer {

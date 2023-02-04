@@ -98,28 +98,3 @@ button {
     align-items: center;
     justify-content: center;
 }
-.topnav {
-    overflow: hidden;
-    background-color: #ffffff;
-    justify-content: flex-end;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    justify-content: flex-end;
-  }
-  
-  .topnav a:hover {
-    background-color: #029ba5;
-    color: rgb(255, 255, 255);
-  }
-  
-  .topnav a.active {
-    background-color: #029ba5;
-    color: white;
-  }
