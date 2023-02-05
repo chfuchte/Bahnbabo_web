@@ -20,15 +20,9 @@ main .fullwidth {
 main #welcome_sect {
     display: flex;
     flex-direction: row;
-}
-
-main #welcome_sect #twitter_posts {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    background-color: #fff;
-    padding: 12px;
-    border-radius: 20px;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    align-items: center;
 }
 
 main #start_sect {
@@ -91,7 +85,17 @@ main #start_sect h1 {
         margin-left: 45vw;
     }
 
+    main #welcome_sect {
+        scrollbar-width: thin;
+    }
+
     main .full {
+        margin-left: 0;
+        min-width: calc(100%);
+        max-width: calc(100%);
+    }
+
+    main .fullwidth {
         margin-left: 0;
         min-width: calc(100%);
         max-width: calc(100%);
