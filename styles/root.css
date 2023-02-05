@@ -25,7 +25,7 @@ body {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--color);
     font-size: 18px;
 }
