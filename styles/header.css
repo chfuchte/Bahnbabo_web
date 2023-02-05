@@ -93,6 +93,7 @@ header label span {
     position: fixed;
     top: var(--header-height);
     background-color: var(--vgf);
+    border-radius: 0 0 20px 20px;
   }
 
   header nav li {
@@ -103,6 +104,12 @@ header label span {
     max-height: 40px;
     min-width: calc(100vw);
     max-width: calc(100vw);
+  }
+  
+  nav li a {
+    min-width: 100vw;
+    max-width: 100vw;
+    font-size: 18px;
   }
 
   header h1 {

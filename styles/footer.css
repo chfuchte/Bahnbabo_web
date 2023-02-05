@@ -8,8 +8,8 @@ footer {
     width: calc(100% - 40px);
     background-color: #5c5c5c;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     box-sizing: border-box;
     padding: 10px;
@@ -22,11 +22,13 @@ footer > div a {
 footer .web_links {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    gap: 2px;
 }
 
 footer .about_links {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
 }
