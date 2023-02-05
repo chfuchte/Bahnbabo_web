@@ -17,9 +17,6 @@ main {
     min-width: calc(100vw - 40px);
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
-}
-
-main section {
     margin-left: 40px;
 }
 

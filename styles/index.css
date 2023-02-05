@@ -23,6 +23,20 @@ main #welcome_sect {
     justify-content: flex-start;
     overflow-x: scroll;
     align-items: center;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+main .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 main #start_sect {
@@ -96,6 +110,12 @@ main #start_sect h1 {
     }
 
     main .fullwidth {
+        margin-left: 0;
+        min-width: calc(100%);
+        max-width: calc(100%);
+    }
+
+    main .row {
         margin-left: 0;
         min-width: calc(100%);
         max-width: calc(100%);
