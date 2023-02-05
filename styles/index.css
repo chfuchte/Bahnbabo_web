@@ -24,7 +24,7 @@ main #start_sect {
 
 main #start_sect #bahnbabo {
     border-radius: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     min-height: 16em;
     max-height: 16em;
     min-width: 16em;
@@ -34,6 +34,14 @@ main #start_sect #bahnbabo {
     justify-content: center;
     margin-left: 60vw;
     margin-top: 50vh;
+    outline: 4px solid  var(--vgf);
+}
+
+main #start_sect #bahnbabo:hover {
+    outline: 4px solid #fff;
+}
+
+main #start_sect #bahnbabo:visited {
     outline: 4px solid #fff;
 }
 
