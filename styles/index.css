@@ -5,7 +5,7 @@ main {
     max-width: calc(100% - 40px);
 }
 
-main section {
+main .full {
     min-width: calc(100%);
     max-width: calc(100%);
     min-height: calc(100vh - var(--header-height));
@@ -64,7 +64,7 @@ main #start_sect h1 {
         margin-left: 45vw;
     }
 
-    main section {
+    main .full {
         margin-left: 0;
         min-width: calc(100%);
         max-width: calc(100%);
