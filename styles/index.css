@@ -12,6 +12,25 @@ main .full {
     max-height: calc(100vh - var(--header-height));
 }
 
+main .fullwidth {
+    min-width: calc(100%);
+    max-width: calc(100%);
+}
+
+main #welcome_sect {
+    display: flex;
+    flex-direction: row;
+}
+
+main #welcome_sect #twitter_posts {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 20px;
+}
+
 main #start_sect {
     background-image: url(../img/frankfurt-am-main-gfb8fbfaf6_1920.jpg);
     background-repeat: no-repeat;
@@ -34,15 +53,15 @@ main #start_sect #bahnbabo {
     justify-content: center;
     margin-left: 60vw;
     margin-top: 50vh;
-    outline: 4px solid  var(--vgf);
+    outline: 4px solid #fff;
 }
 
 main #start_sect #bahnbabo:hover {
-    outline: 4px solid #fff;
+    outline: 4px solid var(--vgf);
 }
 
 main #start_sect #bahnbabo:visited {
-    outline: 4px solid #fff;
+    outline: 4px solid var(--vgf);
 }
 
 main #start_sect h1 {
