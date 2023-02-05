@@ -82,7 +82,7 @@ header label span {
   border-radius: 100px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 860px) {
   header {
     justify-content: flex-start;
   }

@@ -19,11 +19,15 @@ main {
     box-sizing: border-box;
 }
 
+main section {
+    margin-left: 40px;
+}
+
 footer {
     margin-left: 40px;
 }
 
-@media screen and ((max-height: 900px) or (max-width: 1000px)) {
+@media screen and ((max-height: 920px) or (max-width: 1600px)) {
     main {
         margin-left: 0;
         min-width: calc(100%);
