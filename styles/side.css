@@ -14,7 +14,9 @@
 }
 
 main {
-    margin-left: 40px;
+    min-width: calc(100vw - 40px);
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
 }
 
 footer {
@@ -24,11 +26,19 @@ footer {
 @media screen and ((max-height: 900px) or (max-width: 1000px)) {
     main {
         margin-left: 0;
+        min-width: calc(100%);
+        max-width: calc(100%);
+    }
+
+    main section {
+        min-width: calc(100%);
+        max-width: calc(100%);
     }
 
     footer {
         margin-left: 0;
-        width: 100vw;
+        min-width: 100%;
+        max-width: 100%;
     }
 
     .side_sect {

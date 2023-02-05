@@ -1,0 +1,41 @@
+@import url(root.css);
+
+main {
+    min-width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+}
+
+main section {
+    min-width: calc(100%);
+    max-width: calc(100%);
+    min-height: calc(100vh - var(--header-height));
+    max-height: calc(100vh - var(--header-height));
+}
+
+main #start_sect {
+    background-image: url(../img/frankfurt-am-main-gfb8fbfaf6_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main #start_sect h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+@media screen and ((max-height: 900px) or (max-width: 1000px)) {
+    main {
+        margin-left: 0;
+        min-width: calc(100%);
+        max-width: calc(100%);
+    }
+
+    main section {
+        margin-left: 0;
+        min-width: calc(100%);
+        max-width: calc(100%);
+    }
+}

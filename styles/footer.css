@@ -5,7 +5,8 @@ main {
 }
 
 footer {
-    width: calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
     background-color: #5c5c5c;
     display: flex;
     flex-direction: column;
