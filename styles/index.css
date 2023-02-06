@@ -9,7 +9,7 @@ main .full {
     min-width: calc(100%);
     max-width: calc(100%);
     min-height: calc(100vh - var(--header-height));
-    max-height: calc(100vh - var(--header-height));
+    max-height: none;
 }
 
 main .fullwidth {

@@ -99,9 +99,22 @@ button {
     font-size: 20px;
 }
 
-@media screen and (max-width: 400px) {
-    textarea {
-        max-width: calc(100vw - 40px);
-        min-width: calc(100vw - 40px);
+@media screen and ((max-width: 470px) or (max-height: 500px)) {
+    main .full {
+        max-width: none;
+        max-height: none;
+    }
+    
+    main .fullwidth {
+        max-width: none;
+    }
+
+    section {
+        overflow-x: scroll;
+    }
+
+    button {
+        width: auto;
+        height: auto;
     }
 }
