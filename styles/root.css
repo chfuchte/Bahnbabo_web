@@ -116,5 +116,7 @@ button {
     button {
         width: auto;
         height: auto;
+        padding: 2px;
+        min-height: none;
     }
 }
