@@ -10,4 +10,10 @@ p {
     background-color: #fff;
     box-shadow: 10px 10px 10px 10px #4a4a4a;
     max-width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+p::first-letter {
+    font-size: 32px;
 }
