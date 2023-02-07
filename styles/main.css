@@ -1,0 +1,29 @@
+@import url(root.css);
+
+.side_sect {
+    min-width: var(--side-width);
+    max-width: var(--side-width);
+    min-height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    background-color: var(--accent);
+}
+
+.side_sect a img {
+    min-width: calc(var(--side-width) - 8px);
+    max-width: calc(var(--side-width) - 8px);
+}
+
+main {
+    min-width: calc(100% - var(--side-width));
+    max-width: calc(100% - var(--side-width));
+    margin-left: var(--side-width);
+    min-height: calc(100vh - var(--header-height));
+    max-height: none;
+    margin-top: var(--header-height);
+}

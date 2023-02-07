@@ -1,122 +1,83 @@
 @import url(root.css);
 
 header {
-  min-height: var(--header-height);
-  max-height: var(--header-height);
-  width: 100%;
-  background-color: var(--header);
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  gap: 20px;
-}
-
-main {
-  margin-top: var(--header-height);
-}
-
-header nav a {
-  color: #000000;
-  text-align: center;
-  padding: 10px 22px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-header nav a:hover {
-  background-color: #029ba5;
-  color: rgb(255, 255, 255);
-  border-radius: 10px;
-}
-
-header nav a.active {
-  background-color: #029ba5;
-  color: white;
-  border-radius: 10px;
-}
-
-header nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  overflow: hidden;
-  gap: 20px;
-  align-items: center;
-  margin-right: 12px;
-}
-
-header nav li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: var(--header-height);
+    max-height: var(--header-height);
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header input[type="checkbox"] {
-  display: none;
+    display: none;
+}
+
+header h2 {
+    margin-left: calc(var(--side-width)/2 - 2px);
+    color: var(--accent);
+}
+
+header li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header li:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+header .active {
+    background-color: var(--accent);
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #fff;
+}
+
+header .active:hover {
+    color: #fff;
 }
 
 header label {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  margin-left: 12px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-left: 14px;
 }
 
-header h1 {
-  color: var(--vgf);
-  margin-left: 80px;
+header nav ul {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 6vw;
 }
 
 header label span {
-  background-color: var(--vgf);
-  min-width: 30px;
-  max-width: 30px;
-  min-height: 4px;
-  max-height: 4px;
-  border-radius: 100px;
+    background-color: var(--accent);
+    min-width: 24px;
+    max-width: 24px;
+    min-height: 4px;
+    max-width: 4px;
+    border-radius: 50px;
 }
 
-@media screen and (max-width: 860px) {
-  header {
-    justify-content: flex-start;
-  }
-
-  header nav {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: var(--header-height);
-    background-color: var(--vgf);
-    border-radius: 0 0 20px 20px;
-  }
-
-  header nav li {
+header nav {
+    list-style: none;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    min-height: 40px;
-    max-height: 40px;
-    min-width: calc(100vw);
-    max-width: calc(100vw);
-  }
-  
-  nav li a {
-    min-width: 100vw;
-    max-width: 100vw;
-    font-size: 18px;
-  }
-
-  header h1 {
-    margin-left: 0;
-  }
-
-  header label {
-    display: flex;
-  }
+    gap: 6vw;
+    margin-right: 32px;
+    font-size: 20px;
 }

@@ -1,123 +1,26 @@
 @import url(root.css);
 
-main {
-    min-width: calc(100% - 40px);
-    max-width: calc(100% - 40px);
-}
-
-main .full {
-    min-width: calc(100%);
-    max-width: calc(100%);
-    min-height: calc(100vh - var(--header-height));
-    max-height: none;
-}
-
-main .fullwidth {
-    min-width: calc(100%);
-    max-width: calc(100%);
-}
-
-main #welcome_sect {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    overflow-x: scroll;
-    align-items: center;
-    padding: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
-}
-
-main .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-main #start_sect {
+main #index_sect {
     background-image: url(../img/frankfurt-am-main-gfb8fbfaf6_1920.jpg);
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: calc(100vh - var(--header-height));
     display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-main #start_sect #bahnbabo {
-    border-radius: 100%;
-    background-color: transparent;
-    min-height: 16em;
-    max-height: 16em;
-    min-width: 16em;
-    max-width: 16em;
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 60vw;
-    margin-top: 50vh;
+}
+
+main #index_sect img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
     outline: 4px solid #fff;
-}
-
-main #start_sect #bahnbabo:hover {
-    outline: 4px solid var(--vgf);
-}
-
-main #start_sect #bahnbabo:visited {
-    outline: 4px solid var(--vgf);
-}
-
-main #start_sect h1 {
-    color: #fff;
-    font-size: 4em;
-    padding-top: 20px;
-    text-shadow: 6px 4px black;
-}
-
-@media screen and ((max-height: 920px) or (max-width: 1600px)) {
-    main {
-        margin-left: 0;
-        min-width: calc(100%);
-        max-width: calc(100%);
-    }
-
-    main #start_sect h1 {
-        font-size: 3em;
-    }
-
-    main #start_sect #bahnbabo {
-        margin-top: 10vh;
-        min-height: 12em;
-        max-height: 12em;
-        min-width: 12em;
-        max-width: 12em;
-        margin-left: 45vw;
-    }
-
-    main #welcome_sect {
-        scrollbar-width: thin;
-    }
-
-    main .full {
-        margin-left: 0;
-        min-width: calc(100%);
-        max-width: calc(100%);
-    }
-
-    main .fullwidth {
-        margin-left: 0;
-        min-width: calc(100%);
-        max-width: calc(100%);
-    }
-
-    main .row {
-        margin-left: 0;
-        min-width: calc(100%);
-        max-width: calc(100%);
-    }
+    min-width: none;
+    max-width: 60vw;
+    margin-top: 10%;
 }

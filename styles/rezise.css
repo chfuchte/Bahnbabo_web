@@ -1,0 +1,88 @@
+@import url(root.css);
+
+@media screen and ((max-width: 700px) or (max-height: 900px)) {
+    header label {
+        display: flex;
+    }
+
+    header nav {
+        flex-direction: column;
+        display: none;
+        position: fixed;
+        top: var(--header-height);
+        gap: 14px;
+        background-color: var(--accent);
+        padding: 14px;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    header .active {
+        padding: 0px;
+    }
+
+    header nav li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        max-height: none;
+    }
+
+    header nav>li a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-width: calc(100vw - 28px);
+        max-width: calc(100vw - 28px);
+        background-color: var(--accent);
+    }
+
+    main #index_sect img {
+        min-width: 60vw;
+        max-width: 60vw;
+        margin-top: 20%;
+    }
+
+    header h2 {
+        margin-right: 14px;
+    }
+}
+
+@media screen and ((max-width: 1100px) and (max-height: 800px)) {
+    main #index_sect img {
+        min-width: 30vw;
+        max-width: 30vw;
+        margin-top: 0%;
+    }
+}
+
+@media screen and ((max-width: 1200px) or (max-height: 900px)) {
+    main #index_sect img {
+        min-width: min-content;
+        max-width: min-content;
+        width: auto;
+        min-height: 30vh;
+        max-height: 30vh;
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        min-width: calc(100%);
+        max-width: calc(100%);
+        margin-left: 0px;
+    }
+
+    footer {
+        min-width: calc(100%);
+        max-width: calc(100%);
+        margin-left: 0px;
+    }
+
+    .side_sect {
+        display: none;
+    }
+}
