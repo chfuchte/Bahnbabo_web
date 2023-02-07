@@ -1,0 +1,24 @@
+@import url(root.css);
+
+main section {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 14px;
+    box-shadow: 2px 2px 2px 2px #4e4e4e;
+}
+
+main section p {
+    margin-left: 8px;
+}
+
+main section h3 {
+    margin-left: 8px;
+}
