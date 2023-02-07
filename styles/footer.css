@@ -7,11 +7,15 @@ footer {
     min-width: calc(100% - var(--side-width));
     max-width: calc(100% - var(--side-width));
     height: auto;
-    background-color: #1e1e1e;
+    background-color: #575757;
     color: #fff;
     margin-left: var(--side-width);
     padding: 12px;
     box-sizing: border-box;
+}
+
+footer a {
+    color: #fff;
 }
 
 footer div {
