@@ -24,3 +24,7 @@ main #index_sect img {
     max-width: 60vw;
     margin-top: 10%;
 }
+
+main #index_sect img:hover {
+    outline: 4px solid var(--accent);
+}
