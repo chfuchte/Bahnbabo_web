@@ -74,4 +74,11 @@
     .side_sect {
         display: none;
     }
+
+    main #link_sect {
+        flex-direction: column;
+        gap: 6px;
+        box-sizing: border-box;
+        padding: 6px;
+    }
 }
