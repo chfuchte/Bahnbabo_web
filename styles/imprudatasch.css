@@ -1,7 +1,7 @@
 @import url(root.css);
 
 main section{
-    background-color: #fff;
+    background-color: #029ba080;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -13,6 +13,7 @@ main section{
     box-sizing: border-box;
     padding: 14px;
     box-shadow: 2px 2px 2px 2px #4e4e4e;
+    f
 }
 
 main section p {
