@@ -18,6 +18,7 @@ main section div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 6px;
 }
 
 main section h3 {
