@@ -53,15 +53,58 @@
 
     <main>
         <section id="index_sect">
-            <img src="img/bahnbabo.jpg" title="Meine Politik" onclick="window.location.href='politik.html'">
+            <img src="img/bahnbabo.jpg" id="title_img" title="Meine Politik"
+                onclick="window.location.href='politik.html'">
         </section>
 
         <section id="link_sect">
-            <button onclick="window.location.href ='politik.html'">Meine Themen</button>
-            <button onclick="window.location.href ='ueber.html'">Über mich</button>
+            <script defer>
+                const audio = new Audio();
+                audio.src = '/img/Song.mp3';
+                audio.preload = "none"
+                audio.autoplay = true
+                audio.controls = true
+                audio.type = "audio/mpeg"
+                audio.title = "https://www.dropbox.com/s/d2mu6isolmx82r6/3fair%20-%20Der%20Bahnbabo%20Song.mp3"
+
+                document.querySelector('#link_sect').appendChild(audio);
+
+                const audioCtx = new AudioContext();
+                const source = audioCtx.createMediaElementSource(audio);
+                const analyser = audioCtx.createAnalyser();
+                source.connect(analyser);
+                analyser.connect(audioCtx.destination);
+
+                analyser.fftSize = 256;
+                const bufferLength = analyser.frequencyBinCount;
+                const dataArray = new Uint8Array(bufferLength);
+
+                function updateImage() {
+                    analyser.getByteFrequencyData(dataArray);
+
+                    const total = dataArray.reduce((sum, value) => sum + value);
+                    const percent = total / bufferLength / 256;
+                    const index = Math.floor(percent * 100);
+
+                    if (index < 5) {
+                        document.querySelector('#title_img').style.outlineColor = getComputedStyle(document.body).getPropertyValue('--accent');
+                        document.querySelector('#title_img').style.outlineWidth = "4px";
+                        document.querySelector('#title_img').style.outlineOffset = "0px"
+                        document.querySelector('#title_img').style.outlineStyle = "solid"
+                    } else {
+                        document.querySelector('#title_img').style.outlineStyle = "dashed"
+                        document.querySelector('#title_img').style.outlineWidth = "20px";
+                        document.querySelector('#title_img').style.outlineColor = "#0889a3";
+                        document.querySelector('#title_img').style.outlineOffset = index + "px"
+                    }
+                }
+
+                setInterval(updateImage, 100);
+            </script>
         </section>
 
-        <section id="gedicht_sect" style="background-color: #fff; padding: 14px; box-sizing: border-box;display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <section id="gedicht_sect"
+            style="background-color: #e0e0e0; padding: 14px; box-sizing: border-box;display: flex; flex-direction: row; align-items: center; justify-content: center;">
             <p style="font-size: 24px; text-align: center;">
                 Ich bin hier geboren und ich will hier sterben, <br>
                 Ich habe gelebt und es gab auch Scherben, <br>
@@ -70,8 +113,10 @@
             </p>
         </section>
 
-        <section id="tweets_sect" style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: row; align-items: center; justify-content: center;">
-            <div id="ask_show_tweets" style="display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; border: 2px solid black; background-color: #fff; padding: 14px; gap: 12px;">
+        <section id="tweets_sect"
+            style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <div id="ask_show_tweets"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; border: 2px solid black; background-color: #fff; padding: 14px; gap: 12px;">
                 <h1>Tweeets von Twitter laden?</h1>
                 <button onclick="loadTweets();">einige Tweets laden</button>
             </div>
