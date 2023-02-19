@@ -1,13 +1,13 @@
 @import url(root.css);
 
 main{
-    background-image: url("BahnbaboPChintergrund.png");
+    background-image: url(../img/BahnbaboPChintergrund.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
     max-width: 100%;
-    min-height: calc(100vh - var(--header-height) - 40px);
+    min-height: calc(100vh - var(--header-height));
 }
 
 main .content_sect{
