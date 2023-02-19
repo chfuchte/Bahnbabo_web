@@ -8,15 +8,6 @@ main{
     min-width: 100%;
     max-width: 100%;
     min-height: calc(100vh - var(--header-height) - 40px);
-    justify-content: center;);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: calc(100vh - var(--header-height) - 40px);
-    align-items: center;
-    justify-content: center;
 }
 
 main .content_sect{
