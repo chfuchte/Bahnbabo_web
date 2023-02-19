@@ -8,7 +8,7 @@ main {
 }
 
 main #index_sect {
-    background-image: url(../img/frankfurt-am-main-gfb8fbfaf6_1920.jpg);
+    background-image: src="Bahnbabo PC hintergrund.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
