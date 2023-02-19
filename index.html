@@ -56,28 +56,37 @@
         </section>
 
         <section id="link_sect">
+            <audio id="audio_song" style="display: none;" controls autoplay="false"
+                style="accent-color: red; border-radius: 0px; color: red;">
+                <source src="img/Song.mp3" type="audio/mpeg">
+            </audio>
+            <label for="audio_song" style="margin: 5px;">
+                <button onclick="triggerSong()" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 4px;">
+                    <img src="img/music.svg">
+                    <h4 id="title_audio">abspielen</h4>
+                </button>
+            </label>
             <script defer>
-                const audio = new Audio();
-                audio.src = 'img/Song.mp3';
-                audio.preload = "none"
-                audio.autoplay = false;
-                audio.controls = true
-                audio.type = "audio/mpeg"
-                audio.title = "https://www.dropbox.com/s/d2mu6isolmx82r6/3fair%20-%20Der%20Bahnbabo%20Song.mp3"
-
-                document.querySelector('#link_sect').appendChild(audio);
-                audio.addEventListener('play', () => {
-                    document.querySelector('#title_img').style.outlineColor = "#34b1eb";
-                    document.querySelector('#title_img').style.outlineWidth = "10px";
-                    document.querySelector('#title_img').style.outlineOffset = "10px";
-                    document.querySelector('#title_img').style.outlineStyle = "dashed";
-                })
-                audio.addEventListener('pause', () => {
-                    document.querySelector('#title_img').style.outlineWidth = "4px";
-                    document.querySelector('#title_img').style.outlineColor = "#fff";
-                    document.querySelector('#title_img').style.outlineStyle = "solid";
-                    document.querySelector('#title_img').style.outlineOffset = "0px";
-                })
+                var playing = false;
+                function triggerSong() {
+                    if (playing == false) {
+                        document.querySelector('audio').play()
+                        document.querySelector('#title_img').style.outlineColor = "#34b1eb";
+                        document.querySelector('#title_img').style.outlineWidth = "10px";
+                        document.querySelector('#title_img').style.outlineOffset = "10px";
+                        document.querySelector('#title_img').style.outlineStyle = "dashed";
+                        document.querySelector('#title_audio').innerText = "anhalten"
+                        playing = true
+                    } else {
+                        document.querySelector('audio').pause()
+                        document.querySelector('#title_img').style.outlineWidth = "4px";
+                        document.querySelector('#title_img').style.outlineColor = "#fff";
+                        document.querySelector('#title_img').style.outlineStyle = "solid";
+                        document.querySelector('#title_img').style.outlineOffset = "0px";
+                        document.querySelector('#title_audio').innerText = "abspielen"
+                        playing = false
+                    }
+                }
             </script>
         </section>
 
