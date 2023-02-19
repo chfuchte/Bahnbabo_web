@@ -1,0 +1,63 @@
+@import url(root.css);
+
+main {
+    background-image: url(../img/frankfurt-am-main-gfb8fbfaf6_1920.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: calc(100vh - var(--header-height) - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+main section .content_box {
+    border-radius: 0px 0px 10px 10px;
+    padding: 60px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 6px;
+}
+
+main section .title_box {
+    border-radius: 10px 10px 0px 0px;
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--accent);
+    box-sizing: border-box;
+    color: #fff;
+    padding-left: 14px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+main section .title_box img {
+    margin: 0;
+    transform: translateX(-50%) translateY(-25%);
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 0px;
+    height: 80px;
+    aspect-ratio: 1/1;
+}
