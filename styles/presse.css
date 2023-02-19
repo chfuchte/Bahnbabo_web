@@ -18,7 +18,8 @@ main section {
     box-sizing: border-box;
     border-radius: 50%;
     aspect-ratio: 1;
-    max-width: 75vw;
+    min-width: 40vw;
+    max-width: 40vw;
     margin: 40px;
 }
 
@@ -27,27 +28,27 @@ main section a {
 }
 
 main section a img {
-    min-width: 30vw;
-    max-width: 40vw;
+    min-width: 20vw;
+    max-width: 34vw;
     height: auto;
 }
 
 main section a svg {
-    min-width: 30vw;
-    max-width: 40vw;
+    min-width: 20vw;
+    max-width: 34vw;
     height: auto;
 }
 
 @media screen and (max-width: 600px) {
     main section a img {
-        min-width: 40vw;
-        max-width: 60vw;
+        min-width: 20vw;
+        max-width: 20vw;
         height: auto;
     }
     
     main section a svg {
-        min-width: 40vw;
-        max-width: 60vw;
+        min-width: 20vw;
+        max-width: 20vw;
         height: auto;
     }
 }
