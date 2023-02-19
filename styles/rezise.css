@@ -79,6 +79,7 @@
         flex-direction: column;
         gap: 6px;
         box-sizing: border-box;
-        padding: 6px;
+        padding: 0px;
+        margin: 0px;
     }
 }

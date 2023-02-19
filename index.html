@@ -52,8 +52,7 @@
 
     <main>
         <section id="index_sect">
-            <img src="img/bahnbabo.jpg" id="title_img" title="Meine Politik"
-                onclick="window.location.href='politik.html'">
+            <img src="img/GUDE.jpg" id="title_img" title="Meine Politik" onclick="window.location.href='politik.html'">
         </section>
 
         <section id="link_sect">
@@ -91,13 +90,19 @@
                         document.querySelector('#title_img').style.outlineOffset = "0px"
                         document.querySelector('#title_img').style.outlineStyle = "solid"
                     } else {
-                        document.querySelector('#title_img').style.outlineStyle = "dashed"
-                        document.querySelector('#title_img').style.outlineWidth = "2em";
-                        document.querySelector('#title_img').style.outlineColor = "#0889a3";
-                        document.querySelector('#title_img').style.outlineOffset = index + "px"
+                        if (document.querySelector('body').style.maxWidth < "900px") {
+                            document.querySelector('#title_img').style.outlineStyle = "dashed"
+                            document.querySelector('#title_img').style.outlineWidth = "1em";
+                            document.querySelector('#title_img').style.outlineColor = "#0889a3";
+                            document.querySelector('#title_img').style.outlineOffset = index + "px"
+                        } else {
+                            document.querySelector('#title_img').style.outlineStyle = "dashed"
+                            document.querySelector('#title_img').style.outlineWidth = "1.5em";
+                            document.querySelector('#title_img').style.outlineColor = "#0889a3";
+                            document.querySelector('#title_img').style.outlineOffset = index + "px"
+                        }
                     }
                 }
-
                 setInterval(updateImage, 100);
             </script>
         </section>
