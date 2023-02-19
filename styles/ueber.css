@@ -7,6 +7,20 @@ main {
     gap: 40px;
 }
 
+main #index_sect {
+    background-image: src="Bahnbabo PC hintergrund.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: calc(100vh - var(--header-height) - 40px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 main .content_sect{
     display: flex;
     flex-direction: column;
