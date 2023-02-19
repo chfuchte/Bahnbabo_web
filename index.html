@@ -66,44 +66,18 @@
                 audio.title = "https://www.dropbox.com/s/d2mu6isolmx82r6/3fair%20-%20Der%20Bahnbabo%20Song.mp3"
 
                 document.querySelector('#link_sect').appendChild(audio);
-
-                const audioCtx = new AudioContext();
-                const source = audioCtx.createMediaElementSource(audio);
-                const analyser = audioCtx.createAnalyser();
-                source.connect(analyser);
-                analyser.connect(audioCtx.destination);
-
-                analyser.fftSize = 256;
-                const bufferLength = analyser.frequencyBinCount;
-                const dataArray = new Uint8Array(bufferLength);
-
-                function updateImage() {
-                    analyser.getByteFrequencyData(dataArray);
-
-                    const total = dataArray.reduce((sum, value) => sum + value);
-                    const percent = total / bufferLength / 256;
-                    const index = Math.floor(percent * 100);
-
-                    if (index < 5) {
-                        document.querySelector('#title_img').style.outlineColor = getComputedStyle(document.body).getPropertyValue('--accent');
-                        document.querySelector('#title_img').style.outlineWidth = "4px";
-                        document.querySelector('#title_img').style.outlineOffset = "0px"
-                        document.querySelector('#title_img').style.outlineStyle = "solid"
-                    } else {
-                        if (document.querySelector('body').style.maxWidth < "900px") {
-                            document.querySelector('#title_img').style.outlineStyle = "dashed"
-                            document.querySelector('#title_img').style.outlineWidth = "1em";
-                            document.querySelector('#title_img').style.outlineColor = "#0889a3";
-                            document.querySelector('#title_img').style.outlineOffset = index + "px"
-                        } else {
-                            document.querySelector('#title_img').style.outlineStyle = "dashed"
-                            document.querySelector('#title_img').style.outlineWidth = "1.5em";
-                            document.querySelector('#title_img').style.outlineColor = "#0889a3";
-                            document.querySelector('#title_img').style.outlineOffset = index + "px"
-                        }
-                    }
-                }
-                setInterval(updateImage, 100);
+                audio.addEventListener('play', () => {
+                    document.querySelector('#title_img').style.outlineColor = "#34b1eb";
+                    document.querySelector('#title_img').style.outlineWidth = "10px";
+                    document.querySelector('#title_img').style.outlineOffset = "10px";
+                    document.querySelector('#title_img').style.outlineStyle = "dashed";
+                })
+                audio.addEventListener('pause', () => {
+                    document.querySelector('#title_img').style.outlineWidth = "4px";
+                    document.querySelector('#title_img').style.outlineColor = "#fff";
+                    document.querySelector('#title_img').style.outlineStyle = "solid";
+                    document.querySelector('#title_img').style.outlineOffset = "0px";
+                })
             </script>
         </section>
 
