@@ -76,19 +76,33 @@
             </div>
         </section>
 
-        <section class="video_sect">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p5A_IQBmFd0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RbSrcwx3OME"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aBqLRGz4Ctk"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+        <section class="video_sect" style="justify-content: center; align-items: center; overflow-x: auto;">
+            <div id="enableYouTubeForm"
+                style="margin: 20px;display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; border: 2px solid black; background-color: #fff; padding: 14px; gap: 12px;">
+                <h1>YouTube-Videos laden?</h1>
+                <button onclick="enableYouTube();">Videos von Youtube laden</button>
+            </div>
+            <script>
+                function enableYouTube() {
+                    document.querySelector('#enableYouTubeForm').style.display = "none"
+                    document.querySelector('.video_sect').style.justifyContent = "space-between"
+                    document.querySelector('.video_sect').style.overflowX = "scroll"
+                    document.querySelector('.video_sect').innerHTML = `
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p5A_IQBmFd0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RbSrcwx3OME"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aBqLRGz4Ctk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    `
+                }
+            </script>
         </section>
     </main>
 
