@@ -41,7 +41,7 @@ main .split_sect .content * {
     font-size: 18px;
 }
 
-@media  screen and (max-width: 900px) {
+@media  screen and (max-width: 1300px) {
     main .split_sect {
         flex-direction: column;
     }
