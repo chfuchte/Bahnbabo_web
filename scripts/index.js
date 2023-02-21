@@ -5,3 +5,7 @@ document.querySelector('#nav_expand').addEventListener('change', (e) => {
         document.querySelector('header nav').style.display = "none"
     }
 })
+
+document.querySelector('header h2').addEventListener('click', () => {
+    window.location.href = "index.html"
+})

@@ -10,14 +10,21 @@
         display: none;
         position: fixed;
         top: var(--header-height);
-        gap: 14px;
-        background-color: var(--accent);
-        padding: 14px;
+        gap: 0px;
+        background-color: #00607e;
+        min-height: calc(100vh - var(--header-height));
+        padding: 0px;
         border-radius: 0px 0px 20px 20px;
     }
 
     header .active {
         padding: 0px;
+        background-color: #007295;
+        border-radius: none;
+        margin: 0px;
+        border-radius: 0px;
+        max-width: 100vw;
+        min-width: 100vw;
     }
 
     header nav li {
@@ -29,14 +36,19 @@
         max-height: none;
     }
 
-    header nav>li a {
+    header nav > li a {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        min-width: calc(100vw - 28px);
-        max-width: calc(100vw - 28px);
-        background-color: var(--accent);
+        min-width: calc(100vw);
+        max-width: calc(100vw);
+        min-height: 60px;
+        background-color: #00607e;
+    }
+
+    header nav>li a:hover {
+        color: #fff;
     }
 
     main #index_sect img {

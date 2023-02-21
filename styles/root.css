@@ -42,9 +42,10 @@ button {
     justify-content: center;
     box-sizing: border-box;
     padding: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
     color: #000;
     border-radius: 5px;
     border: 2px solid #1e1e1e;
+    gap: 4px;
 }

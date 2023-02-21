@@ -53,6 +53,7 @@ header label {
     align-items: center;
     justify-content: center;
     gap: 4px;
+    padding: 5px;
     margin-left: 14px;
 }
 
