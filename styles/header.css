@@ -21,6 +21,7 @@ header input[type="checkbox"] {
 header h2 {
     margin-left: calc(var(--side-width)/2 - 2px);
     color: var(--accent);
+    user-select: none;
 }
 
 header li {
