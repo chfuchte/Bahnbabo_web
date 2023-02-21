@@ -1,6 +1,6 @@
 @import url(root.css);
 
-@media screen and ((max-width: 700px) or (max-height: 900px)) {
+@media screen and ((max-width: 700px)/*  or (max-height: 600px) */) {
     header label {
         display: flex;
     }
