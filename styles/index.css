@@ -21,12 +21,12 @@ main #index_sect .title-image-wrapper {
     border-radius: 100%;
     outline: 4px solid #fff;
     max-width: 20vw;
+    max-height: 20vw;
     margin-top: 10%;
     aspect-ratio: 1/1;
     overflow: hidden;
 }
 main #index_sect .title-image-wrapper img {
-    display: block;
     width: 100%;
     height: 100%;
 }
