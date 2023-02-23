@@ -37,6 +37,7 @@ function toggleSong() {
         document.querySelector('.title-image-wrapper').style.outlineWidth = "10px";
         document.querySelector('.title-image-wrapper').style.outlineOffset = "10px";
         document.querySelector('.title-image-wrapper').style.outlineStyle = "dashed";
+        document.querySelector('.title-image-wrapper').classList.add('rotate')
         document.querySelector('#title_audio').innerText = "anhalten"
         playing = true
         console.debug('playing')
@@ -46,6 +47,7 @@ function toggleSong() {
         document.querySelector('.title-image-wrapper').style.outlineColor = "#fff";
         document.querySelector('.title-image-wrapper').style.outlineStyle = "solid";
         document.querySelector('.title-image-wrapper').style.outlineOffset = "0px";
+        document.querySelector('.title-image-wrapper').classList.remove('rotate')
         document.querySelector('#title_audio').innerText = "abspielen"
         playing = false
         console.debug('stoped')
