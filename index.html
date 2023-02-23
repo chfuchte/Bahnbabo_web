@@ -62,33 +62,11 @@
                 <source src="img/Song.mp3" type="audio/mpeg">
             </audio>
             <label for="audio_song" style="margin: 6px;">
-                <button onclick="triggerSong()">
+                <button onclick="toggleSong()">
                     <img src="img/music.svg" style="min-height: 32px; max-height: 32px;">
                     <h4 id="title_audio">abspielen</h4>
                 </button>
             </label>
-            <script defer>
-                var playing = false;
-                function triggerSong() {
-                    if (playing == false) {
-                        document.querySelector('audio').play()
-                        document.querySelector('#title_img').style.outlineColor = "#34b1eb";
-                        document.querySelector('#title_img').style.outlineWidth = "10px";
-                        document.querySelector('#title_img').style.outlineOffset = "10px";
-                        document.querySelector('#title_img').style.outlineStyle = "dashed";
-                        document.querySelector('#title_audio').innerText = "anhalten"
-                        playing = true
-                    } else {
-                        document.querySelector('audio').pause()
-                        document.querySelector('#title_img').style.outlineWidth = "4px";
-                        document.querySelector('#title_img').style.outlineColor = "#fff";
-                        document.querySelector('#title_img').style.outlineStyle = "solid";
-                        document.querySelector('#title_img').style.outlineOffset = "0px";
-                        document.querySelector('#title_audio').innerText = "abspielen"
-                        playing = false
-                    }
-                }
-            </script>
         </section>
 
         <section id="gedicht_sect"
