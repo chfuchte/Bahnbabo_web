@@ -33,19 +33,19 @@ let playingBecauseOfHover = false;
 function toggleSong() {
     if (!playing) {
         document.querySelector('audio').play()
-        document.querySelector('#title_img').style.outlineColor = "#34b1eb";
-        document.querySelector('#title_img').style.outlineWidth = "10px";
-        document.querySelector('#title_img').style.outlineOffset = "10px";
-        document.querySelector('#title_img').style.outlineStyle = "dashed";
+        document.querySelector('.title-image-wrapper').style.outlineColor = "#34b1eb";
+        document.querySelector('.title-image-wrapper').style.outlineWidth = "10px";
+        document.querySelector('.title-image-wrapper').style.outlineOffset = "10px";
+        document.querySelector('.title-image-wrapper').style.outlineStyle = "dashed";
         document.querySelector('#title_audio').innerText = "anhalten"
         playing = true
         console.debug('playing')
     } else {
         document.querySelector('audio').pause()
-        document.querySelector('#title_img').style.outlineWidth = "4px";
-        document.querySelector('#title_img').style.outlineColor = "#fff";
-        document.querySelector('#title_img').style.outlineStyle = "solid";
-        document.querySelector('#title_img').style.outlineOffset = "0px";
+        document.querySelector('.title-image-wrapper').style.outlineWidth = "4px";
+        document.querySelector('.title-image-wrapper').style.outlineColor = "#fff";
+        document.querySelector('.title-image-wrapper').style.outlineStyle = "solid";
+        document.querySelector('.title-image-wrapper').style.outlineOffset = "0px";
         document.querySelector('#title_audio').innerText = "abspielen"
         playing = false
         console.debug('stoped')
