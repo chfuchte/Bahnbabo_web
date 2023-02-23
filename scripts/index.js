@@ -9,3 +9,11 @@ document.querySelector('#nav_expand').addEventListener('change', (e) => {
 document.querySelector('header h2').addEventListener('click', () => {
     window.location.href = "index.html"
 })
+
+document.querySelector('header h2').addEventListener('mouseover', () => {
+    document.querySelector('header h2').innerText = "der Bahnbabo";
+})
+
+document.querySelector('header h2').addEventListener('mouseout', () => {
+    document.querySelector('header h2').innerText = "Peter Wirth";
+})
