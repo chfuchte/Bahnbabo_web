@@ -45,11 +45,11 @@ main #link_sect {
 
 
 .rotate {
-    animation: rotate 2s infinite forwards linear;
+    animation: rotate 4s infinite forwards linear;
 }
 
 .rotate > * {
-    animation: rotate 2s infinite backwards linear;
+    animation: rotateBack 4s infinite linear;
 }
 
 @keyframes rotate {
@@ -58,5 +58,13 @@ main #link_sect {
     }
     to {
         rotate: 360deg;
+    }
+}
+@keyframes rotateBack {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: -360deg;
     }
 }
