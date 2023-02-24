@@ -14,15 +14,21 @@ main #index_sect {
     justify-content: center;
 }
 
-main #index_sect img {
+main #index_sect .title-image-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
     outline: 4px solid #fff;
     max-width: 20vw;
+    max-height: 20vw;
     margin-top: 10%;
     aspect-ratio: 1/1;
+    overflow: hidden;
+}
+main #index_sect .title-image-wrapper img {
+    width: 100%;
+    height: 100%;
 }
 
 main #link_sect {
@@ -35,4 +41,30 @@ main #link_sect {
     max-height: 44px;
     box-sizing: border-box;
     background-color: #e9e9e9;
+}
+
+
+.rotate {
+    animation: rotate 4s infinite forwards linear;
+}
+
+.rotate > * {
+    animation: rotateBack 4s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+@keyframes rotateBack {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: -360deg;
+    }
 }

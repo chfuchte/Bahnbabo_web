@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/rezise.css">
 
     <!-- JS-Scripts -->
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/script.js" defer></script>
     <script src="scripts/tweets.js"></script>
 </head>
 
@@ -52,8 +52,10 @@
 
     <main>
         <section id="index_sect">
-            <img src="img/GUDE.jpg" id="title_img" title="Meine Politik" style="user-select: none;"
-                onclick="window.location.href='politik.html'">
+            <div class="title-image-wrapper">
+                <img src="img/GUDE.jpg" id="title_img" title="Meine Politik" style="user-select: none;"
+                    onclick="window.location.href='politik.html'">
+            </div>
         </section>
 
         <section id="link_sect">
@@ -62,33 +64,11 @@
                 <source src="img/Song.mp3" type="audio/mpeg">
             </audio>
             <label for="audio_song" style="margin: 6px;">
-                <button onclick="triggerSong()">
+                <button onclick="toggleSong()">
                     <img src="img/music.svg" style="min-height: 32px; max-height: 32px;">
                     <h4 id="title_audio">abspielen</h4>
                 </button>
             </label>
-            <script defer>
-                var playing = false;
-                function triggerSong() {
-                    if (playing == false) {
-                        document.querySelector('audio').play()
-                        document.querySelector('#title_img').style.outlineColor = "#34b1eb";
-                        document.querySelector('#title_img').style.outlineWidth = "10px";
-                        document.querySelector('#title_img').style.outlineOffset = "10px";
-                        document.querySelector('#title_img').style.outlineStyle = "dashed";
-                        document.querySelector('#title_audio').innerText = "anhalten"
-                        playing = true
-                    } else {
-                        document.querySelector('audio').pause()
-                        document.querySelector('#title_img').style.outlineWidth = "4px";
-                        document.querySelector('#title_img').style.outlineColor = "#fff";
-                        document.querySelector('#title_img').style.outlineStyle = "solid";
-                        document.querySelector('#title_img').style.outlineOffset = "0px";
-                        document.querySelector('#title_audio').innerText = "abspielen"
-                        playing = false
-                    }
-                }
-            </script>
         </section>
 
         <section id="gedicht_sect"
