@@ -32,7 +32,7 @@ function toggleSong() {
         titleImageWrapper.style.outlineWidth = "10px";
         titleImageWrapper.style.outlineOffset = "10px";
         titleImageWrapper.style.outlineStyle = "dashed";
-        // titleImageWrapper.classList.add('rotate')
+        titleImageWrapper.classList.add('rotate')
         titleAudio.innerText = "anhalten"
         playing = true
         console.debug('playing')
@@ -42,7 +42,7 @@ function toggleSong() {
         titleImageWrapper.style.outlineColor = "#fff";
         titleImageWrapper.style.outlineStyle = "solid";
         titleImageWrapper.style.outlineOffset = "0px";
-        // titleImageWrapper.classList.remove('rotate')
+        titleImageWrapper.classList.remove('rotate')
         titleAudio.innerText = "abspielen"
         playing = false
         console.debug('stoped')
